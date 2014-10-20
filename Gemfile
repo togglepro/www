@@ -7,7 +7,8 @@ gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.0.0"
 gem "jquery-rails"
 gem "jbuilder", "~> 2.0"
-gem "spring",        group: :development
+gem "unicorn", "~> 4.8.3"
 
-# Use unicorn as the app server
-# gem "unicorn"
+group :development do
+  gem "spring"
+end
