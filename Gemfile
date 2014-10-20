@@ -12,8 +12,11 @@ gem "unicorn", "~> 4.8.3"
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
+  gem "letter_opener", "~> 1.2.0"
 end
 
 group :development, :test do
-    gem "rspec-rails", "~> 3.1.0"
+  gem "rspec-rails", "~> 3.1.0"
+  gem "factory_girl_rails", "~> 4.5.0"
+  gem "dotenv-rails"
 end
