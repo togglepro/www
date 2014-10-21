@@ -8,16 +8,17 @@ gem "coffee-rails", "~> 4.0.0"
 gem "jquery-rails"
 gem "jbuilder", "~> 2.0"
 gem "unicorn", "~> 4.8.3"
-gem 'bourbon', '~> 3.2.1'
-gem 'neat', '~> 1.5.1'
-gem 'simple_form', '3.1.0.rc2'
+gem "bourbon", "~> 3.2.1"
+gem "neat", "~> 1.5.1"
+gem "simple_form", "3.1.0.rc2"
+gem "haml-rails", "~> 0.5.3"
 
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
   gem "letter_opener", "~> 1.2.0"
   gem "guard-rspec", "~> 4.3.1", require: false
-  gem 'guard-bundler', require: false
+  gem "guard-bundler", require: false
 end
 
 group :development, :test do
@@ -28,5 +29,9 @@ end
 
 group :test do
   gem "shoulda-matchers", require: false
-  gem 'capybara', '~> 2.4.3'
+  gem "capybara", "~> 2.4.3"
+end
+
+group :production do
+  gem 'rails_12factor'
 end
