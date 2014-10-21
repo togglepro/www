@@ -1,6 +1,37 @@
 .home {
-  padding-top: 80px;
-  .big-logo {
+  .logo {
     text-align: center;
+    margin-bottom: 20px;;
+    @include media($medium-screen-down) {
+      padding-top: 20px;
+    }
+    @include media($medium-screen-up) {
+      padding-top: 40px;
+    }
+  }
+
+  .company-name {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .benefits {
+    text-align: center;
+    color: $dark-gray;
+    @include outer-container;
+    .benefits-customer {
+      @include span-columns(6);
+      background-color: $light-gray;
+      @include media($medium-screen-down) {
+        @include span-columns(12);
+      }
+    }
+    .benefits-professional {
+      @include span-columns(6);
+      background-color: $light-gray;
+      @include media($medium-screen-down) {
+        @include span-columns(12);
+      }
+    }
   }
 }

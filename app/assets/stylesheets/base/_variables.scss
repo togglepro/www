@@ -1,7 +1,5 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
-$base-font-family: $sans-serif;
+$base-font-family: 'Oxygen', sans-serif;
 $header-font-family: $base-font-family;
 
 // Font Sizes
@@ -35,7 +33,7 @@ $light-green: #E6EFC2;
 $base-background-color: $dark-gray;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $light-gray;
 $base-accent-color: $blue;
 
 // Link Colors

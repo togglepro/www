@@ -21,6 +21,9 @@ h6 {
 
 h1 {
   font-size: $h1-font-size;
+  @include media($medium-screen-down) {
+    font-size: $h1-font-size * 0.5;
+  }
 }
 
 h2 {
