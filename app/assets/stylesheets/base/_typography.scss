@@ -5,6 +5,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  margin: 0;
 }
 
 h1,
@@ -22,12 +23,15 @@ h6 {
 h1 {
   font-size: $h1-font-size;
   @include media($medium-screen-down) {
-    font-size: $h1-font-size * 0.5;
+    font-size: $h1-font-size * 0.75;
   }
 }
 
 h2 {
   font-size: $h2-font-size;
+  @include media($medium-screen-down) {
+    font-size: $h2-font-size * 0.60;
+  }
 }
 
 h3 {
