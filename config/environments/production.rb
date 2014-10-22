@@ -70,7 +70,7 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
   config.action_mailer.default_options = {
-    from: "notifications@toggle.pro"
+    from: "Toggle Professional Services LLC <notifications@toggle.pro>"
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
