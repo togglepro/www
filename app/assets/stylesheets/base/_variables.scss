@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: 'Oxygen', sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $header-font-family: $base-font-family;
 
 // Font Sizes
@@ -22,24 +22,26 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477DCA;
-$dark-gray: #666666;
+$dark-gray: #4C4C4C;
 $medium-gray: #999;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
-$white: #FFFFFF;
+
+$brand-white: #FFFFFF;
+$brand-red: #FF2600;
 
 // Background Color
 $base-background-color: $dark-gray;
 
 // Font Colors
-$base-font-color: $light-gray;
-$base-accent-color: $blue;
+$base-font-color: $dark-gray;
+$base-accent-color: $brand-red;
 
 // Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: $base-font-color;
+$hover-link-color: lighten($base-link-color, 20);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 

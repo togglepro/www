@@ -22,24 +22,30 @@ h6 {
 
 h1 {
   font-size: $h1-font-size;
-  @include media($medium-screen-down) {
-    font-size: $h1-font-size * 0.75;
+  @include media($mobile) {
+    font-size: $h1-font-size * 0.8;
   }
 }
 
 h2 {
   font-size: $h2-font-size;
-  @include media($medium-screen-down) {
-    font-size: $h2-font-size * 0.60;
+  @include media($mobile) {
+    font-size: $h2-font-size * 0.8;
   }
 }
 
 h3 {
   font-size: $h3-font-size;
+  @include media($mobile) {
+    font-size: $h3-font-size * 0.8;
+  }
 }
 
 h4 {
   font-size: $h4-font-size;
+  @include media($mobile) {
+    font-size: $h4-font-size * 0.9;
+  }
 }
 
 h5 {
@@ -57,7 +63,7 @@ p {
 a {
   @include transition(color 0.1s linear);
   color: $base-link-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: $hover-link-color;
