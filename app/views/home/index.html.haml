@@ -91,5 +91,5 @@
         = simple_form_for @team_interest do |f|
           = f.input :name, as: :string, placeholder: "Name", label: false
           = f.input :email, as: :string, placeholder: "Email", label: false
-          = f.input :content, as: :text, placeholder: "Tell us about yourself.", label: false
+          = f.input :content, as: :text, placeholder: "Tell us about yourself. Use Markdown if you'd like.", label: false, input_html: { rows: 5 }
           = f.submit "Submit"
