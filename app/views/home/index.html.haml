@@ -3,4 +3,61 @@
     = image_tag "logo300x496.png", size: "150x248"
 
   .company-name
-    %h1 Toggle Professional Services LLC
+    .company-name-small
+      %h1
+        Toggle
+        %span.company-name-small-extended
+          Professional Services LLC
+    .company-name-large
+      %h1 Toggle Professional Services LLC
+
+  .home-content
+    %p.home-subhead Quick and efficient solutions to technical problems using a global network of moonlighting professionals.
+    %hr
+
+    %h2 Services Offered
+    .home-services
+      %ul
+        %li.block
+          %h3 Software Development
+          .home-services-question Need to build a new application?
+          :markdown
+            We handle the entire process including specification, design, development, testing, and deployment.
+
+            We build solutions with open source software such as [Ruby on Rails](http://www.rubyonrails.org).
+
+        %li.block
+          %h3 Software Maintenance
+          .home-services-question Need to maintain an existing application?
+          :markdown
+            We handle ongoing bug fixes, feature enhancements, library upgrades, and infrastructure management.
+
+            We use [GitHub](https://github.com) for collaboration, and cloud hosting services like [Heroku](https://www.heroku.com) or [Ninefold](http://ninefold.com).
+        %li.block
+          %h3 Business Intelligence
+          .home-services-question Need access to your data for analysis?
+          :markdown
+            We handle schema design, data extraction, data transformation, database management, analysis application integration, and report development.
+
+            We build solutions using open source components and cloud hosting services on the server, and integrate with whatever client applications are desired such as [Excel](http://products.office.com/en-us/excel) or [Tableau](http://www.tableausoftware.com).
+        %li.block
+          %h3 Operations Research
+          .home-services-question Need to optimize your decision making?
+          :markdown
+            We handle specification, design, development, deployment, and maintenance of operations research solutions.
+
+            We build solutions using open source components and cloud hosting services where possible, and proprietary solvers and engines as necessary.
+        %li.block
+          %h3 Strategy Development
+          .home-services-question Need to clarify your goals and action plan?
+          :markdown
+            We handle analyis of internal and external factors, synthesize opportunities, clarify trade offs, and offer recommendations.
+
+            We use tools from classic strategy development books such as [Competitive Strategy by Michael Porter](http://www.amazon.com/Competitive-Strategy-Techniques-Industries-Competitors/dp/0684841487) and [The Innovator's Solution by Clayton Christensen](http://www.amazon.com/gp/product/B000U684Y8?btkr=1).
+        %li.block
+          %h3 Strategy Management
+          .home-services-question Need to improve your execution?
+          :markdown
+            We handle the development of themes, goals, measures, metrics, milestones, and management tools to help achieve your strategy.
+
+            We use tools from classic strategy management books such as [The Balanced Scorecard by Robert Kaplan and David Norton](http://www.amazon.com/gp/product/B000SEIJPG?btkr=1).

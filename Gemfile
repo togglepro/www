@@ -12,6 +12,7 @@ gem "bourbon", "~> 3.2.1"
 gem "neat", "~> 1.5.1"
 gem "simple_form", "3.1.0.rc2"
 gem "haml-rails", "~> 0.5.3"
+gem "redcarpet"
 
 group :development do
   gem "spring"
