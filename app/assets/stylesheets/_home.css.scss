@@ -50,7 +50,7 @@
       font-size: $base-font-size * 1.5;
     }
 
-    .home-services {
+    .home-services, .home-team {
       @include outer-container;
       li.block {
         @include span-columns(6);
@@ -67,6 +67,10 @@
         color: $brand-red;
         margin-bottom: 0.5em;
       }
+    }
+
+    .home-team-form {
+      @include span-columns(12);
     }
   }
 
