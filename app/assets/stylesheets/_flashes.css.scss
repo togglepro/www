@@ -1,0 +1,13 @@
+.flashes {
+  text-align: center;
+  color: $brand-white;
+  .flash {
+    padding: 4px 10px;
+    &.notice {
+      background-color: $brand-black;
+    }
+    &.error {
+      background-color: $brand-red;
+    }
+  }
+}
