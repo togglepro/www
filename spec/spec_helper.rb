@@ -1,5 +1,5 @@
 require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start if ENV["CODECLIMATE_REPO_TOKEN"].present?
+CodeClimate::TestReporter.start if String(ENV["CODECLIMATE_REPO_TOKEN"]).length > 0
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
