@@ -70,7 +70,12 @@
     }
 
     .home-services-form, .home-team-form {
+      margin-top: em(10);
       @include span-columns(12);
+      h3 {
+        background-color: $light-gray;
+        margin-bottom: em(4);
+      }
     }
   }
 }
