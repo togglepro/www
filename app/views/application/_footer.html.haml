@@ -1,3 +1,5 @@
 %footer
   .footer-content
-    = copyright_notice(Time.now.utc.year)
+    %ul
+      %li= link_to "@togglepro", "https://twitter.com/togglepro"
+      %li.copyright= copyright_notice(Time.now.utc.year)
