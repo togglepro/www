@@ -1,4 +1,5 @@
-require 'sidekiq/testing'
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start if ENV["CODECLIMATE_REPO_TOKEN"].present?
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

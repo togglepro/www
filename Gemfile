@@ -33,6 +33,7 @@ end
 group :test do
   gem "shoulda-matchers", require: false
   gem "capybara", "~> 2.4.3"
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do
