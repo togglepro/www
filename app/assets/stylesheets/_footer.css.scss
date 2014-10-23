@@ -1,15 +1,11 @@
 footer {
   color: $brand-white;
   min-height: 100px;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
 
   .footer-content {
     max-width: $content-max-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 10px 0px 10px;
-
-    @include media($mobile) {
-      text-align: center;
-    }
+    margin: auto;
   }
 }
