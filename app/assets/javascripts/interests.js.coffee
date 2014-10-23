@@ -3,18 +3,19 @@ add_error_class_to_wrapper = (element) ->
 
 $ ->
   # validate form
-  $(document).on "submit", "form.new_team_interest", (event) ->
+  $(document).on "submit", "form[id^='new_'][id$='_interest']", (event) ->
+
     error_count = 0
 
     # validate name
-    input = $(this).find("input#team_interest_name")
+    input = $(this).find("input[id$='_interest_name']")
     if input.val().length == 0
       add_error_class_to_wrapper(input)
       input.attr("placeholder", "Name is required.")
       error_count += 1
 
     # validate email
-    input = $(this).find("input#team_interest_email")
+    input = $(this).find("input[id$='_interest_email']")
     if input.val().length == 0
       add_error_class_to_wrapper(input)
       input.attr("placeholder", "Email is required.")
@@ -26,7 +27,7 @@ $ ->
       error_count += 1
 
     # validate content
-    input = $(this).find("textarea#team_interest_content")
+    input = $(this).find("textarea[id$='_interest_content']")
     if input.val().length == 0
       add_error_class_to_wrapper(input)
       input.attr("placeholder", "Please tell us about yourself.")

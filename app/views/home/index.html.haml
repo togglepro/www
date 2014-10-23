@@ -61,7 +61,10 @@
             We handle the development of themes, goals, measures, metrics, milestones, and management tools to help achieve your strategy.
 
             We use tools from classic strategy management books such as [The Balanced Scorecard by Robert Kaplan and David Norton](http://www.amazon.com/gp/product/B000SEIJPG?btkr=1).
-
+      .home-services-form
+        %h3 Want to learn more?
+        = simple_form_for @customer_interest do |f|
+          = render "interested/fields", f: f
     .home-team
       %hr
       %h2 Team
@@ -90,7 +93,4 @@
       .home-team-form
         %h3 Interested in joining?
         = simple_form_for @team_interest do |f|
-          = f.input :name, as: :string, placeholder: "Name", label: false
-          = f.input :email, as: :string, placeholder: "Email", label: false
-          = f.input :content, as: :text, placeholder: "Tell us about yourself. Use Markdown if you'd like.", label: false, input_html: { rows: 5 }
-          = f.submit "Submit"
+          = render "interested/fields", f: f

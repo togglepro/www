@@ -69,9 +69,8 @@
       }
     }
 
-    .home-team-form {
+    .home-services-form, .home-team-form {
       @include span-columns(12);
     }
   }
-
 }
