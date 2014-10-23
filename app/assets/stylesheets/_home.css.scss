@@ -34,47 +34,54 @@
     color: $brand-red;
   }
 
-  .home-content {
-    text-align: center;
+  .home-content-wrapper {
     background-color: $brand-white;
-    color: $dark-gray;
-    padding-bottom: 40px;
 
-    padding: 10px 20% 40px 20%;
+    .home-content {
+      text-align: center;
 
-    @include media($mobile) {
-      padding: 10px 10px 40px 10px;
-    }
+      color: $dark-gray;
 
-    p.home-subhead {
-      font-size: $base-font-size * 1.5;
-    }
+      padding: 0px 10px 40px 10px;
 
-    .home-services, .home-team {
-      @include outer-container;
-      li.block {
-        @include span-columns(6);
-        @include omega(2n);
-        margin-top: em(5);
-        @include media($mobile) {
-          @include span-columns(1);
-          @include omega;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $content-max-width;
+
+      @include media($mobile) {
+        padding: 10px 10px 40px 10px;
+      }
+
+      p.home-subhead {
+        font-size: $base-font-size * 1.5;
+      }
+
+      .home-services, .home-team {
+        @include outer-container;
+        li.block {
+          @include span-columns(6);
+          @include omega(2n);
+          margin-top: em(5);
+          @include media($mobile) {
+            @include span-columns(1);
+            @include omega;
+          }
+        }
+
+        .home-services-question {
+          font-weight: bold;
+          color: $brand-red;
+          margin-bottom: 0.5em;
         }
       }
 
-      .home-services-question {
-        font-weight: bold;
-        color: $brand-red;
-        margin-bottom: 0.5em;
-      }
-    }
-
-    .home-services-form, .home-team-form {
-      margin-top: em(10);
-      @include span-columns(12);
-      h3 {
-        background-color: $light-gray;
-        margin-bottom: em(4);
+      .home-services-form, .home-team-form {
+        margin-top: em(10);
+        @include span-columns(12);
+        h3 {
+          background-color: $light-gray;
+          margin-bottom: em(4);
+        }
       }
     }
   }

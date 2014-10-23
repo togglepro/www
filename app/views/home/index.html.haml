@@ -11,86 +11,87 @@
     .company-name-large
       %h1 Toggle Professional Services LLC
 
-  .home-content
-    %p.home-subhead Quick and efficient solutions to technical problems using a global network of moonlighting professionals.
-    %hr
-
-    .home-services
-      %h2 Services Offered
-      %ul
-        %li.block
-          %h3 Software Development
-          .home-services-question Need to build a new application?
-          :markdown
-            We handle the entire process including specification, design, development, testing, and deployment.
-
-            We build solutions with open source software such as [Ruby on Rails](http://www.rubyonrails.org).
-
-        %li.block
-          %h3 Software Maintenance
-          .home-services-question Need to maintain an existing application?
-          :markdown
-            We handle ongoing bug fixes, feature enhancements, library upgrades, and infrastructure management.
-
-            We use [GitHub](https://github.com) for collaboration, and cloud hosting services like [Heroku](https://www.heroku.com) or [Ninefold](http://ninefold.com).
-        %li.block
-          %h3 Business Intelligence
-          .home-services-question Need access to your data for analysis?
-          :markdown
-            We handle schema design, data extraction, data transformation, database management, analysis application integration, and report development.
-
-            We build solutions using open source components and cloud hosting services on the server, and integrate with whatever client applications are desired such as [Excel](http://products.office.com/en-us/excel) or [Tableau](http://www.tableausoftware.com).
-        %li.block
-          %h3 Operations Research
-          .home-services-question Need to optimize your decision making?
-          :markdown
-            We handle specification, design, development, deployment, and maintenance of operations research solutions.
-
-            We build solutions using open source components and cloud hosting services where possible, and proprietary solvers and engines as necessary.
-        %li.block
-          %h3 Strategy Development
-          .home-services-question Need to clarify your goals and action plan?
-          :markdown
-            We handle analyis of internal and external factors, synthesize opportunities, clarify trade offs, and offer recommendations.
-
-            We use tools from classic strategy development books such as [Competitive Strategy by Michael Porter](http://www.amazon.com/Competitive-Strategy-Techniques-Industries-Competitors/dp/0684841487) and [The Innovator's Solution by Clayton Christensen](http://www.amazon.com/gp/product/B000U684Y8?btkr=1).
-        %li.block
-          %h3 Strategy Management
-          .home-services-question Need to improve your execution?
-          :markdown
-            We handle the development of themes, goals, measures, metrics, milestones, and management tools to help achieve your strategy.
-
-            We use tools from classic strategy management books such as [The Balanced Scorecard by Robert Kaplan and David Norton](http://www.amazon.com/gp/product/B000SEIJPG?btkr=1).
-      .home-services-form
-        %h3 How can we help you?
-        = simple_form_for @customer_interest do |f|
-          = render "interested/fields", f: f
-    .home-team
+  .home-content-wrapper
+    .home-content
+      %p.home-subhead Quick and efficient solutions to technical problems using a global network of moonlighting professionals.
       %hr
-      %h2 Team
-      %p What makes our team unique and valuable?
-      %ul
-        %li.block
-          %h3 Moonlighting
-          .home-services-question Have some extra time available?
-          :markdown
-            We work with experts on projects that fit into their spare time. That allows us to leverage the skills and interests of our team in a way that benefits everybody.
-        %li.block
-          %h3 Expert
-          .home-services-question Have expert skills in our service areas?
-          :markdown
-            We assemble a team of experts based on the needs of each project. If your skills match our service offering and you have some extra time for interesting projects, get in touch.
-        %li.block
-          %h3 Anonymous
-          .home-services-question Want to keep your identity private?
-          :markdown
-            We understand that many professionals would take on side projects if they could stay anonymous. By default, the identity of our team is kept private.
-        %li.block
-          %h3 Professional
-          .home-services-question Want respect and prefessionalism?
-          :markdown
-            We only work with clients and team members that behave professionally. That means clear communication, commitments made and kept, and respect at all times.
-      .home-team-form
-        %h3 Interested in joining?
-        = simple_form_for @team_interest do |f|
-          = render "interested/fields", f: f
+
+      .home-services
+        %h2 Services Offered
+        %ul
+          %li.block
+            %h3 Software Development
+            .home-services-question Need to build a new application?
+            :markdown
+              We handle the entire process including specification, design, development, testing, and deployment.
+
+              We build solutions with open source software such as [Ruby on Rails](http://www.rubyonrails.org).
+
+          %li.block
+            %h3 Software Maintenance
+            .home-services-question Need to maintain an existing application?
+            :markdown
+              We handle ongoing bug fixes, feature enhancements, library upgrades, and infrastructure management.
+
+              We use [GitHub](https://github.com) for collaboration, and cloud hosting services like [Heroku](https://www.heroku.com) or [Ninefold](http://ninefold.com).
+          %li.block
+            %h3 Business Intelligence
+            .home-services-question Need access to your data for analysis?
+            :markdown
+              We handle schema design, data extraction, data transformation, database management, analysis application integration, and report development.
+
+              We build solutions using open source components and cloud hosting services on the server, and integrate with whatever client applications are desired such as [Excel](http://products.office.com/en-us/excel) or [Tableau](http://www.tableausoftware.com).
+          %li.block
+            %h3 Operations Research
+            .home-services-question Need to optimize your decision making?
+            :markdown
+              We handle specification, design, development, deployment, and maintenance of operations research solutions.
+
+              We build solutions using open source components and cloud hosting services where possible, and proprietary solvers and engines as necessary.
+          %li.block
+            %h3 Strategy Development
+            .home-services-question Need to clarify your goals and action plan?
+            :markdown
+              We handle analyis of internal and external factors, synthesize opportunities, clarify trade offs, and offer recommendations.
+
+              We use tools from classic strategy development books such as [Competitive Strategy by Michael Porter](http://www.amazon.com/Competitive-Strategy-Techniques-Industries-Competitors/dp/0684841487) and [The Innovator's Solution by Clayton Christensen](http://www.amazon.com/gp/product/B000U684Y8?btkr=1).
+          %li.block
+            %h3 Strategy Management
+            .home-services-question Need to improve your execution?
+            :markdown
+              We handle the development of themes, goals, measures, metrics, milestones, and management tools to help achieve your strategy.
+
+              We use tools from classic strategy management books such as [The Balanced Scorecard by Robert Kaplan and David Norton](http://www.amazon.com/gp/product/B000SEIJPG?btkr=1).
+        .home-services-form
+          %h3 How can we help you?
+          = simple_form_for @customer_interest do |f|
+            = render "interested/fields", f: f
+      .home-team
+        %hr
+        %h2 Team
+        %p What makes our team unique and valuable?
+        %ul
+          %li.block
+            %h3 Moonlighting
+            .home-services-question Have some extra time available?
+            :markdown
+              We work with experts on projects that fit into their spare time. That allows us to leverage the skills and interests of our team in a way that benefits everybody.
+          %li.block
+            %h3 Expert
+            .home-services-question Have expert skills in our service areas?
+            :markdown
+              We assemble a team of experts based on the needs of each project. If your skills match our service offering and you have some extra time for interesting projects, get in touch.
+          %li.block
+            %h3 Anonymous
+            .home-services-question Want to keep your identity private?
+            :markdown
+              We understand that many professionals would take on side projects if they could stay anonymous. By default, the identity of our team is kept private.
+          %li.block
+            %h3 Professional
+            .home-services-question Want respect and prefessionalism?
+            :markdown
+              We only work with clients and team members that behave professionally. That means clear communication, commitments made and kept, and respect at all times.
+        .home-team-form
+          %h3 Interested in joining?
+          = simple_form_for @team_interest do |f|
+            = render "interested/fields", f: f
