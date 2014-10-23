@@ -5,14 +5,20 @@ RSpec.describe CopyrightNoticesHelper do
   end
 
   context "when the start year is the current year" do
-    it "formats it correctly" do
-      expect(helper.copyright_notice).to eq "&copy; 2014 Toggle Professional Services LLC"
+    let :correct_format do
+      "&copy; 2014 Toggle Professional Services LLC"
+    end
+    it "formats correctly" do
+      expect(helper.copyright_notice).to eq correct_format
     end
   end
 
   context "when the start year is not the current year" do
-    it "formats it correctly" do
-      expect(helper.copyright_notice(2013)).to eq "&copy; 2013-2014 Toggle Professional Services LLC"
+    let :correct_format do
+      "&copy; 2013 - 2014 Toggle Professional Services LLC"
+    end
+    it "formats correctly" do
+      expect(helper.copyright_notice(2013)).to eq correct_format
     end
   end
 

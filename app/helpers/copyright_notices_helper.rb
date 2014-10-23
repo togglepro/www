@@ -7,7 +7,7 @@ module CopyrightNoticesHelper
 
 private
   def copyright_notice_year_range(start_year, end_year)
-    return "#{start_year}-#{end_year}" if start_year != end_year
+    return "#{start_year} - #{end_year}" if start_year != end_year
     return "#{end_year}"
   end
 end
